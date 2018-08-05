@@ -12,7 +12,7 @@ function removeAllSyntaxStyles(){
 function addStyle(themename) {
     $('<link>').attr('rel','stylesheet')
           .attr('type','text/css')
-          .attr('href','/css/syntax-'+themename+'.css')
+          .attr('href','css/syntax-'+themename+'.css')
           .appendTo('head');
 }
 
