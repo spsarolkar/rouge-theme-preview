@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="jumbotron bg-light">
+    <h1 class="text-primary">Rouge Theme Preview Page</h1>
+    <p class="lead">This is a simple application to demo the themes available in Rouge syntax highlighter</p>
+    <hr class="my-4">
+    <p>Make a selection of theme below to view the preview</p>
+    <div class="btn-group">
+      <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select Theme
+      </button>
+      <div class="dropdown-menu">
+        {% for themename in site.data.themes %}
+        <a class="dropdown-item" href="javascript:reaplyStyles('{{themename}}')">{{ themename }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
