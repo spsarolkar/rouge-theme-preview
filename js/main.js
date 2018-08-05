@@ -1,6 +1,8 @@
 $(document).ready(function(){
 
-
+ $('.dropdown-menu a').click(function(){
+    $('#selected').html("Current Selection: <span class='bg-info text-white p-3 mb-2'>"+$(this).text()+"</span>");
+  });
 
 });
 
@@ -22,11 +24,3 @@ function reaplyStyles(themename){
     return true;
 }
 
- $(function(){
-
-    $(".dropdown-menu").on('click', 'li a', function(){
-      $(".btn:first-child").text($(this).text());
-      $(".btn:first-child").val($(this).text());
-   });
-
-});
