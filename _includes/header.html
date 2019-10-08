@@ -1,5 +1,6 @@
 <div class="container-fluid">
   <div class="jumbotron bg-light">
+    <footer class="alert alert-warning">Can be best viewed in Google Chrome or Firefox</footer>
     <h1 class="text-primary">Rouge Theme Preview Page</h1>
     <p class="lead">This is a simple application to demo the themes available in Rouge syntax highlighter</p>
     <hr class="my-4">
@@ -10,7 +11,7 @@
       </button>
       <div class="dropdown-menu">
         {% for themename in site.data.themes %}
-        <a class="dropdown-item" href="javascript:reaplyStyles('{{themename}}')">{{ themename }}</a>
+        <a class="dropdown-item" href="javascript:void(0)" onclick="reaplyStyles('{{themename}}')">{{ themename }}</a>
         {% endfor %}
       </div>
     </div>
